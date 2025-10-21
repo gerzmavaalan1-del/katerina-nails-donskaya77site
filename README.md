@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -301,20 +302,174 @@ footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px;paddi
 
 @keyframes fadeIn{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
 
-@media(max-width:900px){
-  .main-grid{grid-template-columns:1fr;}
-  .services-columns{grid-template-columns:1fr;}
-  .logo-title{font-size:60px;}
-  .master-content{grid-template-columns:1fr;}
-  .master-stats{grid-template-columns:1fr;}
-  .master-photo{width:100%;max-width:400px;margin:0 auto 30px;}
-  .contact-options{flex-direction:column;}
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 50px;
+    margin: 30px 0 15px;
+  }
+  
+  .search-bar {
+    width: 90%;
+    max-width: 320px;
+    padding: 8px 20px;
+  }
+  
+  .search-results {
+    width: 90%;
+    max-width: 320px;
+  }
+  
+  .container {
+    padding: 15px;
+  }
+  
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .services-columns {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .note {
+    padding: 18px;
+  }
+  
+  .master-section {
+    padding: 20px;
+    border-radius: 16px;
+  }
+  
+  .master-title {
+    font-size: 26px;
+  }
+  
+  .master-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .master-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .master-photo {
+    order: -1;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .contact-options {
+    flex-direction: column;
+  }
+  
+  .contact-btn {
+    padding: 12px;
+  }
+  
+  .instagram-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .cta-text {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .contact-option {
+    padding: 15px;
+  }
 }
-@media(max-width:480px){
-  .portfolio-grid{grid-template-columns:1fr;}
-  .logo-title{font-size:40px;}
-  .search-bar{width:250px;}
-  .master-title{font-size:26px;}
+
+@media (max-width: 480px) {
+  .logo-title {
+    font-size: 40px;
+    margin: 20px 0 10px;
+  }
+  
+  .paper {
+    padding: 15px;
+  }
+  
+  .master-title {
+    font-size: 22px;
+  }
+  
+  .stat-card {
+    padding: 15px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+  
+  .highlight-card {
+    padding: 12px;
+  }
+  
+  .inspiration-box {
+    padding: 18px;
+  }
+  
+  .inspiration-text {
+    font-size: 14px;
+  }
+  
+  .contact-card {
+    padding: 15px;
+  }
+}
+
+/* Улучшенная адаптация для очень маленьких экранов */
+@media (max-width: 360px) {
+  .logo-title {
+    font-size: 36px;
+  }
+  
+  .search-bar {
+    padding: 6px 15px;
+  }
+  
+  .search-bar input {
+    font-size: 14px;
+  }
+  
+  .note {
+    padding: 15px;
+  }
+  
+  .note-title {
+    font-size: 18px;
+  }
+  
+  .note-price {
+    font-size: 18px;
+  }
+  
+  .master-section {
+    padding: 15px;
+  }
+  
+  .master-title {
+    font-size: 20px;
+  }
+  
+  .master-subtitle {
+    font-size: 16px;
+  }
 }
 </style>
 </head>
@@ -452,7 +607,8 @@ footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px;paddi
           <a class="portfolio-item" href="https://i.ibb.co/NcP7mdB/IMG-1.jpg" target="_blank"><img src="https://i.ibb.co/NcP7mdB/IMG-1.jpg" alt="Работа 1"></a>
           <a class="portfolio-item" href="https://i.ibb.co/k2KZ1ZFY/IMG-2.jpg" target="_blank"><img src="https://i.ibb.co/k2KZ1ZFY/IMG-2.jpg" alt="Работа 2"></a>
           <a class="portfolio-item" href="https://i.ibb.co/JR9g2K6w/IMG-3.jpg" target="_blank"><img src="https://i.ibb.co/JR9g2K6w/IMG-3.jpg" alt="Работа 3"></a>
-          <a class="portfolio-item" href="https://i.ibb.co/9HXtBzt0/IMG-4.jpg" target="_blank"><img src="https://i.ibb.co/9HXtBzt0/IMG-4.jpg" alt="Работа 4"></a>
+          <!-- Заменил четвертое фото на новое -->
+          <a class="portfolio-item" href="https://i.postimg.cc/FRMLr2gk/IMG-0067.jpg" target="_blank"><img src="https://i.postimg.cc/FRMLr2gk/IMG-0067.jpg" alt="Работа 4"></a>
           <a class="portfolio-item" href="https://i.ibb.co/SXS5Mstr/IMG-5.jpg" target="_blank"><img src="https://i.ibb.co/SXS5Mstr/IMG-5.jpg" alt="Работа 5"></a>
           <a class="portfolio-item" href="https://i.postimg.cc/7CGq3kt3/IMG-0060.jpg" target="_blank"><img src="https://i.postimg.cc/7CGq3kt3/IMG-0060.jpg" alt="Работа 6"></a>
           <a class="portfolio-item" href="https://i.postimg.cc/2qbCQD94/IMG-0064.jpg" target="_blank"><img src="https://i.postimg.cc/2qbCQD94/IMG-0064.jpg" alt="Работа 7"></a>
